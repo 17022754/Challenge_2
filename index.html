@@ -4,19 +4,22 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>challenge 2</title>
-	<link type="text/css" href="styles/style.css" rel="stylesheet" />	
+	<link type="text/css" href="styles/style.css" rel="stylesheet" />
+	<link type="text/css" href="styles/responsive-layout.css" rel="stylesheet" />
+	<script type="text/javascript" src="scripts/main.js" defer></script>	
 </head>
 <body>
+	<header>
+		<h1>Space X</h1>
+		<h2>Houd de tijd bij en volg intructies van marsmannetje Leo, zodat u minder last heeft van een Jetlag.</h2>
+	</header>
+	<main>
+<!-- This is the time in the timezone around Amsterdam -->
 	<div class="clock">
-		<div class="hour">
-			<div class="hr" id="hr"></div>
-		</div>
-		<div class="minutes">
-			<div class="min" id="min"></div>
-		</div>
-		<div class="secondes">
-			<div class="sec" id="sec"></div>
+		<div class="display">
+			<div id="time">12:00:00</div>
 		</div>
 	</div>
+	</main>
 </body>
 </html>
