@@ -35,7 +35,7 @@ function addElements(){
     document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/background-day.png')";
     document.getElementById("images").src = images[0];
     document.getElementById("text").textContent = text[0];
-    document.getElementById("time").style.color = 'rgb(31, 41, 64)';
+    document.getElementById("time").style.color = 'rgb(255, 20, 147)';
   } else {
     document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/background-night.jpeg')";
     document.getElementById("images").src = images[1];

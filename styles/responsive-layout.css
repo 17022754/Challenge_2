@@ -1,0 +1,77 @@
+/*layout mobile version with grid-container*/
+.header {
+	grid-area: header;
+}
+
+.clock {
+	grid-area: clock;
+	place-self: center;
+}
+
+.figure {
+	grid-area: figure;
+	place-self: center;
+}
+
+.aside {
+	grid-area: aside;
+	place-self: center;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 15% 15% 45% 25%;
+	grid-template-areas: 
+	"header"
+	"clock"
+	"figure"
+	"aside";
+	grid-gap: 1rem;
+}
+
+/*layout tablet version with grid-container*/
+@media only screen and (min-width: 768px) {
+	.grid-container{
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 20% 30% 50%; 
+		grid-template-areas: 
+		"header header"
+		"clock clock"
+		"figure aside";
+	}
+	#time {
+		font-size: 3rem;
+	}
+}
+
+/*layout laptop version with grid-container*/
+@media only screen and (min-width: 1024px){
+	#images {
+		max-width: 350px;
+	}
+
+	h1{
+		font-size: 1.375rem; /*24px*/
+	}
+
+	h2{
+		font-size: 1.25rem; /*22px*/
+	}
+
+	#time {
+	font-size: 4rem; /*(30*1/16) = 2rem staat voor 30px*/ 
+	}
+}
+
+/*layout desktop version with grid-container*/
+@media only screen and (min-width: 1280px) and (min-width: 1366px) {
+	.grid-container{
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 20% 60% 20%; 
+		grid-template-areas: 
+		"header header"
+		"clock figure"
+		"clock aside";
+	}
+}

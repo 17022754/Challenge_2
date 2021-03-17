@@ -1,7 +1,8 @@
+/*Fonts imported from google fonts to use cool fonts on the website*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-
+/*Global style for the whole page */
 * {
 	margin: 0;
 	padding: 0;
@@ -15,19 +16,18 @@ html, body{
 	height: 100%;
 }
 
+/*Style for the background image*/
 body{
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
+	background-color: rgb(31, 41, 64); /*if the background-image isn't working this color will show*/
 }
 
+/*style for the different headings on the website*/
 h1, h2 {
 	font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, .display {
-	text-align: center;
 }
 
 h1 {
@@ -45,51 +45,41 @@ h1, #time {
 h2 {
 	font-size: 1rem;
 	font-weight: 600;	
+	width: 95vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1, h2{
+	text-align: center;
 }
 
 h3, p {
 	font-size: 0.875rem;/*(14*1/16)=0.875 staat voor 14px */
 }
 
-main {
-	display: flex;
-	flex-direction: column; 	
-	align-items: center; 
-	justify-content: center;
-}
-
-.clock {
-	height: 20vh;
-	min-width: 90vw;
-	margin: 1rem;
-}
-
- body {
-	background-color: rgb(31, 41, 64);
-}
-
+/*Style of the time inside the clock div*/
 #time {
-	margin-top: 6vh;
-	margin-bottom: 6vh;
 	font-size: 1.875rem; /*(30*1/16) = 2rem staat voor 30px*/ 
 	font-weight: 900;
-	letter-spacing: 0.3rem; /* 8px */
 	font-family: 'Orbitron', sans-serif;
 }
 
+/*Style of the image*/
 #images{
-	display: block;
-	margin: 1rem auto;
 	width:100%;
 	max-width: 250px;
 	max-height: auto;
 }
 
+/*Style of the text box*/
 #text {
-	max-width: 95vw;
+	max-width: 90%;
 	padding: 0.875rem;
-	margin: 2rem auto;
 	background-color: rgb(31, 41, 64);
 	border: 0.3rem solid rgb(255, 255, 255);
 	border-radius: 1rem;
 }
+
+
+

@@ -9,25 +9,22 @@
 	<script type="text/javascript" src="scripts/main.js" defer></script>	
 </head>
 <body>
-	<header>
-		<h1>Space X</h1>
-		<h2>Houd de tijd bij en volg intructies van marsmannetje Leo, zodat u minder last heeft van een Jetlag.</h2>
-	</header>
-	<main>
-<!-- This is the time in the timezone around Amsterdam -->
-	<div class="clock">
-		<div class="display">
-			<div id="time">12:00:00</div>
+	<div class="grid-container">
+		<header class="grid-item header">
+			<h1>Space X</h1>
+			<h2>Houd de tijd bij en volg intructies van marsmannetje Leo, zodat u minder last heeft van een Jetlag.</h2>
+		</header>
+		<div class="grid-item clock">
+			<div class="display">
+				<div id="time">12:00:00</div>
+			</div>
 		</div>
-	</div>
-	<section>
-		<figure>
+		<figure class="grid-item figure">
 			<img id="images" src="images/marsmannetje-morning.png">
 		</figure>
-		<aside id="text">
+		<aside id="text" class="grid-item aside">
 			<p>Goedemorgen, hopelijk heb je een fijne nachtrust gehad. Op aarde is het nu ochtend, dus sta op en begin de dag! Tip: vergeet niet genoeg fruit te eten. </p>
 		</aside>
-	</section>
-	</main>
+	</div>
 </body>
 </html>
