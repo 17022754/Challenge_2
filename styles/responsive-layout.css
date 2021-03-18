@@ -18,6 +18,11 @@
 	place-self: center;
 }
 
+.tips{
+	grid-area: tips;
+	place-self: center;
+}
+
 .grid-container{
 	display: grid;
 	grid-template-columns: 100%;
@@ -26,7 +31,8 @@
 	"header"
 	"clock"
 	"figure"
-	"aside";
+	"aside"
+	"tips";
 	grid-gap: 1rem;
 }
 
@@ -34,16 +40,35 @@
 @media only screen and (min-width: 768px) {
 	.grid-container{
 		grid-template-columns: 50% 50%;
-		grid-template-rows: 20% 30% 50%; 
+		grid-template-rows: 10% 20% 50% 20%; 
 		grid-template-areas: 
 		"header header"
 		"clock clock"
-		"figure aside";
+		"figure aside"
+		"figure tips";
 	}
 	#time {
 		font-size: 3rem;
 	}
+
+/*Style and layout for the animations*/
+	#animation {
+		position: relative;
+		animation: images;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes images {
+		0%{left: 0px;}
+		20%{left: 50px;}
+		40%{left: 75px;}
+		60%{left: 100px;}
+		80%{left: 50px;}
+		100%{left: 0px;}
+	}
 }
+
 
 /*layout laptop version with grid-container*/
 @media only screen and (min-width: 1024px){
@@ -68,10 +93,15 @@
 @media only screen and (min-width: 1280px) and (min-width: 1366px) {
 	.grid-container{
 		grid-template-columns: 50% 50%;
-		grid-template-rows: 20% 60% 20%; 
+		grid-template-rows: 10% 50% 10% 30%; 
 		grid-template-areas: 
 		"header header"
 		"clock figure"
-		"clock aside";
+		"clock aside"
+		"clock tips";
+	}
+
+	.aside {
+		margin-top: 3rem;
 	}
 }

@@ -28,11 +28,13 @@ body{
 /*style for the different headings on the website*/
 h1, h2 {
 	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
 h1 {
 	font-size: 1.125rem; /* (18*1/16) = 1.125 staat voor 18px */
 	text-transform: uppercase;
+	letter-spacing: 0.3rem; /* 8px */
 	font-weight: 700;
 	margin-top: 0.3rem;  /*(5*1/16) = 0.3125 staat voor 5px*/
 	color: rgb(31, 41, 64);
@@ -48,10 +50,6 @@ h2 {
 	width: 95vw;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-h1, h2{
-	text-align: center;
 }
 
 h3, p {
@@ -75,11 +73,33 @@ h3, p {
 /*Style of the text box*/
 #text {
 	max-width: 90%;
-	padding: 0.875rem;
 	background-color: rgb(31, 41, 64);
 	border: 0.3rem solid rgb(255, 255, 255);
-	border-radius: 1rem;
+	border-radius: 0.3rem;
 }
 
+/*style of the button*/
+.button {
+	width: 19rem;
+	background-color: rgb(255, 20, 147);
+	border: 0.3rem solid rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+}
 
+.button, #text-tips, #text {
+	padding: 0.875rem;
+}
 
+/*Style of the text inside the button*/
+#text-tips{
+	max-width: 19rem;
+	text-align: center;
+	background-color: rgb(31, 41, 64);
+	display: none;
+	margin: 1rem 0;
+	transition: transform .3s;
+}
+
+#text-tips:hover {
+	transform: scale(1.3);
+}
